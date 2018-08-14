@@ -37,13 +37,28 @@ h5 {
 
 p {
   font-size: 1em;
-  font-weight: 400;
   line-height: 1.5em;
   margin: 0;
 }
 
 h5 + p {
   margin-top: -0.25rem;
+}
+
+.grey {
+  color: #999;
+}
+
+.spacer-1 {
+  height: 1rem;
+}
+
+.spacer-2 {
+  height: 2rem;
+}
+
+.spacer-3 {
+  height: 3rem;
 }
 
 /* * * HEADER * * */
@@ -70,7 +85,7 @@ header .menu {
 }
 
 .header-sticky {
-  height: 2rem;
+  height: 6rem;
   padding: 2rem;
   background: url('./images/header-background@2x.png') #FDF8F3;
   background-size: contain;
@@ -214,6 +229,7 @@ nav a {
   max-width: 62rem;
   padding: 0 1rem;
   margin: auto;
+  min-height: calc(100vh - 12.5rem);
 }
 
 .main h1 {
@@ -369,4 +385,19 @@ nav a {
     width: 50%;
     max-width: 25rem;
   }
+}
+
+/* * * FOOTER * * */
+
+footer {
+  border-top: 2px solid #00B5D3;
+  background: #F5F9FA;
+  color: #555;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 300;
+}
+
+footer .hashtag {
+  font-weight: 500;
 }
