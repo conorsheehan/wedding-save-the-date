@@ -46,7 +46,7 @@ header .menu {
 }
 
 .main h1 {
-  font-family: 'Beloved Script', serif;
+  font-family: 'beloved-script', serif;
   font-size: 1.875em;
   line-height: 1.333333em;
   text-align: center;
@@ -67,7 +67,7 @@ header .menu {
 }
 
 .person h3 {
-  font-family: 'Beloved Script', serif;
+  font-family: 'beloved-script', serif;
   font-size: 1.875em;
   line-height: 1.333333em;
   margin: 1rem 0 0 0;
