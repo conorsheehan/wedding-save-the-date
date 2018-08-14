@@ -45,6 +45,14 @@ h5 + p {
   margin-top: -0.25rem;
 }
 
+p + h3 {
+  margin-top: 3rem;
+}
+
+h3 + p {
+  margin-top: 0.5rem;
+}
+
 .grey {
   color: #999;
 }
@@ -228,8 +236,9 @@ nav a {
 .main {
   max-width: 62rem;
   padding: 0 1rem;
-  margin: auto;
-  min-height: calc(100vh - 12.5rem);
+  margin: 2rem auto;
+  min-height: calc(100vh - 16.5rem);
+  font-weight: 300;
 }
 
 .main h1 {
@@ -267,7 +276,6 @@ nav a {
 .person p {
   font-size: 1.125em;
   line-height: 1.5em;
-  font-weight: 300;
   margin: 0;
 }
 
@@ -400,4 +408,10 @@ footer {
 
 footer .hashtag {
   font-weight: 500;
+}
+
+/* * * QUESTIONS * * */
+
+.questions h3 {
+  color: #E8007B;
 }
