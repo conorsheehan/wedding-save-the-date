@@ -104,7 +104,7 @@ header h1 {
   text-transform: uppercase;
 }
 
-header .menu {
+.menu {
   display: block;
   float: left;
   height: 2rem;
@@ -225,12 +225,22 @@ header .menu {
 
 /* * * NAVIGATION * * */
 
+.nav-shown {
+  height: 100%;
+  overflow: hidden;
+}
+
 .full-nav {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
+  display: none;
+}
+
+.full-nav.visible {
+  display: block;
 }
 
 .nav-bg {
@@ -247,17 +257,45 @@ header .menu {
   z-index: 1;
 }
 
+.home .nav-bg {
+  background-image: url('./images/hero-home-1280.jpg');
+}
+
+.people .nav-bg {
+  background-image: url('./images/hero-1-1280.jpg');
+}
+
+.places .nav-bg {
+  background-image: url('./images/hero-6-1280.jpg');
+}
+
+.things .nav-bg {
+  background-image: url('./images/hero-3-1280.jpg');
+}
+
+.questions .nav-bg {
+  background-image: url('./images/hero-5-1280.jpg');
+}
+
 .blur-overlay {
   position: absolute;
   width: 100%;
   height: 100%;
   background: white;
-  opacity: .5;
+  opacity: .75;
+}
+
+.full-nav .menu {
+  position: relative;
+  margin: 2rem 0 0 2rem;
+  background-image: url('./images/icon-close.svg');
+  z-index: 2;
 }
 
 nav {
-  margin: 4rem 2rem 2rem;
-  position: relative;
+  margin: 2rem;
+  position: absolute;
+  bottom: 0;
   z-index: 2;
 }
 
