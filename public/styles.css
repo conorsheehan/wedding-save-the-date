@@ -72,6 +72,10 @@ header .menu {
   background-image: url('./images/background-people@2x.png');
 }
 
+.home .hero {
+  background-image: url('./images/background-home@2x.png');
+}
+
 .chevron-down {
   background: url('./images/chevron-down@2x.png');
   background-size: contain;
@@ -99,6 +103,27 @@ header .menu {
   position: absolute;
   margin-bottom: 2rem;
   width: 100%;
+}
+
+.cta {
+  font-size: 1.25em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  line-height: 4rem;
+  background: #E8007B;
+  border: 2px solid white;
+  border-radius: 40px;
+  width: 15rem;
+  height: 4rem;
+}
+
+.hero .cta {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  margin-left: -7.5rem;
 }
 
 .main {
