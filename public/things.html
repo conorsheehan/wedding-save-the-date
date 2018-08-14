@@ -13,23 +13,25 @@
           crossorigin="anonymous"></script>
         <script src="https://use.typekit.net/ofw8xfk.js"></script>
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
+        <script src="https://unpkg.com/jarallax@1.10/dist/jarallax.min.js"></script>
 
         <link rel="stylesheet" href="normalize.css">
         <link rel="stylesheet" href="styles.css">
 
         <script src="script.js"></script>
     </head>
-    <body>
-        <header class="header-sticky">
-            <a href="menu.html" class="menu" alt="menu"></a>
-            <h1>Things</h1>
+    <body class="things">
+        <header class="hero">
+            <div data-jarallax data-speed="0.7" class="jarallax hero-bg">
+                <a href="menu.html" class="menu" alt="menu"></a>
+                <h1>Things</h1>
+                <div class="chevron-down"></div>
+            </div>
         </header>
         <div class="main">
-            <div class="spacer-2"></div>
-            <div class="spacer-2"></div>
+            <div class="spacer-4"></div>
             <h1 class="grey">Wedding registry coming soon...</h1>
-            <div class="spacer-2"></div>
-            <div class="spacer-2"></div>
+            <div class="spacer-4"></div>
         </div>
         <footer>
             <p>July 6, 2019<br>Bedford, NH</p>

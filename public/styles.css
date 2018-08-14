@@ -1,3 +1,22 @@
+/* * * PARALLAX * * */
+.jarallax {
+    position: relative;
+    z-index: 0;
+}
+.jarallax > .jarallax-img {
+    position: absolute;
+    object-fit: cover;
+    /* support for plugin https://github.com/bfred-it/object-fit-images */
+    font-family: 'object-fit: cover;';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* * * CUSTOM OVERRIDES * * */
+
 * {
   box-sizing: border-box;
 }
@@ -69,6 +88,10 @@ h3 + p {
   height: 3rem;
 }
 
+.spacer-4 {
+  height: 4rem;
+}
+
 /* * * HEADER * * */
 
 header h1 {
@@ -112,28 +135,43 @@ header .menu {
 
 /* * * HERO * * */
 
+.hero {
+  height: 100vh;
+  color: white;
+}
+
+.hero-bg {
+  width: 100%;
+  height: 100%;
+  background-image: url('./images/hero-1-1280.jpg');
+}
+
+.home .hero-bg {
+  background-image: url('./images/hero-home-1280.jpg');
+}
+
+.people .hero-bg {
+  background-image: url('./images/hero-1-1280.jpg');
+}
+
+.places .hero-bg {
+  background-image: url('./images/hero-2-1280.jpg');
+}
+
+.things .hero-bg {
+  background-image: url('./images/hero-3-1280.jpg');
+}
+
+.questions .hero-bg {
+  background-image: url('./images/hero-5-1280.jpg');
+}
+
 .hero .menu {
   margin: 2rem;
 }
 
-.hero {
-  height: 100vh;
-  background: url('./images/background-fun.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.people-2 .hero {
-  background-image: url('./images/background-people@2x.png');
-}
-
-.home .hero {
-  background-image: url('./images/background-home@2x.png');
-}
-
 .chevron-down {
-  background: url('./images/chevron-down@2x.png');
+  background: url('./images/chevron-down-light.svg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -148,16 +186,17 @@ header .menu {
 .hero h1 {
   text-align: center;
   font-size: 2.5em;
+  font-weight: 500;
   bottom: 0;
   position: absolute;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   width: 100%;
 }
 
 .hero .chevron-down {
   bottom: 0;
   position: absolute;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   width: 100%;
 }
 
@@ -165,11 +204,11 @@ header .menu {
 
 .cta {
   font-size: 1.25em;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
   color: white;
   text-align: center;
-  line-height: 4rem;
+  line-height: 3.75rem;
   background: #E8007B;
   border: 2px solid white;
   border-radius: 40px;
@@ -179,7 +218,7 @@ header .menu {
 
 .hero .cta {
   position: absolute;
-  bottom: 3rem;
+  bottom: 4rem;
   left: 50%;
   margin-left: -7.5rem;
 }
