@@ -10,22 +10,20 @@ html {
   color: #111111;
 }
 
-header {
-  height: 2rem;
-  padding: 2rem;
-  background: url('./images/header-background@2x.png') #FDF8F3;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+h1 {
+  font-family: 'beloved-script', serif;
+  font-size: 1.875em;
+  line-height: 1.333333em;
+  margin: 2rem 0;
 }
 
 header h1 {
-  margin: 0 0 0 1rem;
+  margin: 0;
   padding: 0;
+  font-family: 'futura-pt', 'Avenir Next', Helvetica, sans-serif;
   font-size: 1.5em;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.333333em;
-  float: left;
   text-transform: uppercase;
 }
 
@@ -40,17 +38,76 @@ header .menu {
   background-position: center;
 }
 
+.header-sticky {
+  height: 2rem;
+  padding: 2rem;
+  background: url('./images/header-background@2x.png') #FDF8F3;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.people-2 .header-sticky {
+  display: none;
+}
+
+.header-sticky h1 {
+  margin: 0 0 0 1rem;
+  float: left;
+}
+
+.hero .menu {
+  margin: 2rem;
+}
+
+.hero {
+  height: 100vh;
+  background: url('./images/background-fun.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.people-2 .hero {
+  background-image: url('./images/background-people@2x.png');
+}
+
+.chevron-down {
+  background: url('./images/chevron-down@2x.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 2rem;
+  height: 1rem;
+}
+
+.hero .chevron-down {
+  margin: auto;
+}
+
+.hero h1 {
+  text-align: center;
+  font-size: 2.5em;
+  bottom: 0;
+  position: absolute;
+  margin-bottom: 4rem;
+  width: 100%;
+}
+
+.hero .chevron-down {
+  bottom: 0;
+  position: absolute;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
 .main {
   max-width: 62rem;
   margin: auto;
 }
 
 .main h1 {
-  font-family: 'beloved-script', serif;
-  font-size: 1.875em;
-  line-height: 1.333333em;
   text-align: center;
-  margin: 2rem 0;
 }
 
 .person {
