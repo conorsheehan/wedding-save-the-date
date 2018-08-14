@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="24px" viewBox="0 0 17 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-location</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Prototype" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Places-XS" transform="translate(-80.000000, -418.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Group-4" transform="translate(16.000000, 128.000000)">
+                <g id="Group-7" transform="translate(0.000000, 36.000000)">
+                    <g id="Actions" transform="translate(0.000000, 238.000000)">
+                        <g id="Group-5" transform="translate(1.000000, 0.000000)">
+                            <g id="icon-location" transform="translate(63.000000, 16.000000)">
+                                <path d="M8.12571429,0 C3.63428571,0 0,3.63428571 0,8.12571429 C0,14.3314286 8.12571429,24 8.12571429,24 C8.12571429,24 16.2514286,14.3314286 16.2514286,8.12571429 C16.2514286,3.63428571 12.6171429,0 8.12571429,0 Z M8.12571429,11.6228571 C6.20571429,11.6228571 4.62857143,10.08 4.62857143,8.12571429 C4.62857143,6.20571429 6.17142857,4.62857143 8.12571429,4.62857143 C10.08,4.62857143 11.6228571,6.17142857 11.6228571,8.12571429 C11.6228571,10.0457143 10.0457143,11.6228571 8.12571429,11.6228571 Z" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
