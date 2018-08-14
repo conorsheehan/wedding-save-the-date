@@ -5,7 +5,7 @@ var app = (function() {
 
   return {
     initialize: function() {
-      this.$menu = $('a.menu');
+      this.$menu = $('.hero .menu');
       this.$nav = $('.full-nav');
       this.$body = $('body');
       this.addHandlers();
@@ -26,47 +26,25 @@ var app = (function() {
     },
 
     showNav: function() {
-      this.$nav.addClass(visibleClass);
+      var self = this;
+      this.$nav.show();
       this.$body.addClass(navVisibleClass);
       $(window).scrollTop(0);
+      setTimeout(function() {
+        self.$nav.addClass(visibleClass);
+      }, 50);
       return this;
     },
 
     hideNav: function() {
+      var self = this;
       this.$nav.removeClass(visibleClass);
       this.$body.removeClass(navVisibleClass);
+      setTimeout(function() {
+        self.$nav.hide();
+      }, 500);
       return this;
-    },
-
-    // hideAll: function() {
-    //   this.$header.addClass(hiddenClass);
-    //   this.$footer.addClass(hiddenClass);
-    //   this.$ampersand.addClass(hiddenClass);
-    //   return this;
-    // },
-
-    // showAll: function() {
-    //   var self = this;
-    //   setTimeout(function() { self.showHeader(); }, 500);
-    //   setTimeout(function() { self.showAmpersand(); }, 500);
-    //   setTimeout(function() { self.showFooter(); }, 2000);
-    //   return this;
-    // },
-
-    // showHeader: function() {
-    //   this.$header.removeClass(hiddenClass);
-    //   return this;
-    // },
-
-    // showFooter: function() {
-    //   this.$footer.removeClass(hiddenClass);
-    //   return this;
-    // },
-
-    // showAmpersand: function() {
-    //   this.$ampersand.removeClass(hiddenClass);
-    //   return this;
-    // }
+    }
   };
 })();
 
