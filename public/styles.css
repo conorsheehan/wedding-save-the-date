@@ -32,6 +32,7 @@ html {
   font-size: 16px;
   line-height: 1.5em;
   color: #111111;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -154,6 +155,12 @@ header h1 {
   background-image: url('./images/hero-home-1280.jpg');
 }
 
+@media (min-width:75rem) {
+  .home .hero-bg {
+    background-image: url('./images/hero-home-3360.jpg');
+  }
+}
+
 .people .hero-bg {
   background-image: url('./images/hero-1-1280.jpg');
 }
@@ -247,13 +254,14 @@ header h1 {
   background: white;
 }
 
-.nav-shown {
+/*.nav-shown {
   height: 100%;
   overflow: hidden;
-}
+}*/
 
 .full-nav {
-  position: absolute;
+  position: fixed;
+  /*position: absolute;*/
   top: 0;
   width: 100%;
   height: 100%;
@@ -591,3 +599,39 @@ footer .hashtag {
   text-align: center;
   padding: 2rem 1rem;
 }
+
+/* * * RESPONSIVE XL * * */
+
+.max-width-lg {
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.max-width-md {
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.max-width-sm {
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.full-width {
+  margin-left: calc(-50vw + 30rem);
+  margin-right: calc(-50vw + 30rem);
+}
+
+@media (min-width:67.5rem) {
+  body {
+    font-size: 1.25em;
+  }
+
+  .lg-centered {
+    text-align: center;
+  }
+}
+

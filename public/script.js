@@ -28,7 +28,7 @@ var app = (function() {
     showNav: function() {
       var self = this;
       this.$nav.show();
-      this.$body.addClass(navVisibleClass);
+      // this.$body.addClass(navVisibleClass);
       $(window).scrollTop(0);
       setTimeout(function() {
         self.$nav.addClass(visibleClass);
@@ -39,7 +39,7 @@ var app = (function() {
     hideNav: function() {
       var self = this;
       this.$nav.removeClass(visibleClass);
-      this.$body.removeClass(navVisibleClass);
+      // this.$body.removeClass(navVisibleClass);
       setTimeout(function() {
         self.$nav.hide();
       }, 500);
