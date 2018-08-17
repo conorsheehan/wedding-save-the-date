@@ -524,21 +524,28 @@ a.card:hover {
 /* * * FOOTER * * */
 
 footer {
-  border-top: 2px solid #00B5D3;
-  background: #F5F9FA;
+  /*border-top: 2px solid #222;*/
+  background: url(https://images.unsplash.com/photo-1480511361210-b1b966c8d614?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a9a4002bcee51dc8258f5cb42060fa3f&auto=format&fit=crop&w=3133&q=80);
+  background-size: cover;
   color: #555;
   padding: 1.5rem 1rem;
   text-align: center;
   font-weight: 300;
+  background-position: center;
+  padding: 6rem 0;
+  background-color: rgba(0,0,00,0.5);
+  background-blend-mode: overlay;
+  color: white;
+  letter-spacing: 0.1em;
 }
 
 footer p {
-  font-size: 1em;
+  /*font-size: 1em;*/
   line-height: 1.75em;
 }
 
 footer .hashtag {
-  font-weight: 500;
+  /*font-weight: 500;*/
 }
 
 /* * * QUESTIONS * * */
