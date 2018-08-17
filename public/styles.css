@@ -700,5 +700,15 @@ footer .hashtag {
   .hero {
     height: 100%;
   }
+
+  .hero h1 {
+    top: 50%;
+    margin: 0;
+    line-height: 1.5em;
+    margin-top: -.75em;
+    font-size: 5em;
+    text-shadow: 0 0 8px rgba(0,0,0,0.25);
+    bottom: unset;
+  }
 }
 
