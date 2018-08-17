@@ -136,7 +136,7 @@ header h1 {
 /* * * HERO * * */
 
 .hero {
-  height: calc(100vh - 3.5rem);
+  height: calc(100% - 3.5rem);
   color: white;
 }
 
