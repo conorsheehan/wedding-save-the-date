@@ -512,3 +512,37 @@ footer .hashtag {
 .questions h3 {
   color: #E8007B;
 }
+
+/* * * HOME * * */
+
+.home-date {
+  background-image: url('./images/hero-4-1280.jpg');
+  background-color: rgba(0,0,0,0.5);
+  /*background-blend-mode: overlay;*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  margin: 0 -1rem;
+  color: white;
+}
+
+.home-date-inner {
+  padding: 8rem 0;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.home-date .small {
+  font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: 0.15em;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+
+.home-date .large {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
