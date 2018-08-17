@@ -35,6 +35,12 @@ html {
   overflow-x: hidden;
 }
 
+/* FONT HACK */
+.wf-loading * {
+  color: transparent !important;
+  text-shadow: none;
+}
+
 h1 {
   font-family: 'beloved-script', serif;
   font-size: 1.875em;
