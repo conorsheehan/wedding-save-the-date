@@ -30,6 +30,7 @@ html, body {
 html {
   font-family: 'futura-pt', 'Avenir Next', Helvetica, sans-serif;
   font-size: 16px;
+  line-height: 1.5em;
   color: #111111;
 }
 
@@ -42,8 +43,8 @@ h1 {
 
 h3 {
   font-family: 'beloved-script', serif;
-  font-size: 1.5em;
-  line-height: 1.333333em;
+  font-size: 1.75em;
+  line-height: 1.428em;
   margin: 0.25em 0;
 }
 
@@ -55,8 +56,8 @@ h5 {
 }
 
 p {
-  font-size: 1em;
-  line-height: 1.5em;
+  font-size: 1.125em;
+  line-height: 1.77em;
   margin: 0;
 }
 
@@ -359,7 +360,7 @@ nav a {
 
 .person {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .person img {
@@ -371,9 +372,6 @@ nav a {
 }
 
 .person h3 {
-  font-family: 'beloved-script', serif;
-  font-size: 1.875em;
-  line-height: 1.333333em;
   margin: 1rem 0 0 0;
 }
 
@@ -386,9 +384,8 @@ nav a {
 }
 
 .person p {
-  font-size: 1.125em;
-  line-height: 1.5em;
-  margin: 0;
+  /*font-size: 1.125em;
+  line-height: 1.5em;*/
 }
 
 @media (min-width:544px) {
@@ -469,7 +466,7 @@ a.card:hover {
   color: white;
   font-weight: 700;
   line-height: 3.5rem;
-  font-size: 1.375em;
+  font-size: 1.25em;
   text-align: center;
 }
 
@@ -533,6 +530,7 @@ footer {
 }
 
 footer p {
+  font-size: 1em;
   line-height: 1.75em;
 }
 
@@ -578,4 +576,9 @@ footer .hashtag {
   font-size: 2.5rem;
   line-height: 1.5em;
   text-transform: uppercase;
+}
+
+.card-button {
+  text-align: center;
+  padding: 2rem 1rem;
 }
