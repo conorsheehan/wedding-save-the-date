@@ -5,7 +5,7 @@ var app = (function() {
 
   return {
     initialize: function() {
-      this.$menu = $('.hero .menu');
+      this.$menu = $('.menu');
       this.$nav = $('.full-nav');
       this.$body = $('body');
       this.addHandlers();
@@ -18,7 +18,7 @@ var app = (function() {
         e.preventDefault();
         self.showNav();
       });
-      $('.full-nav .close').on('click', function(e) {
+      $('.menu-close').on('click', function(e) {
         e.preventDefault();
         self.hideNav();
       });

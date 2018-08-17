@@ -104,7 +104,7 @@ header h1 {
   text-transform: uppercase;
 }
 
-.menu {
+/*.menu {
   display: block;
   float: left;
   height: 2rem;
@@ -113,7 +113,7 @@ header h1 {
   background-size: 75%;
   background-repeat: no-repeat;
   background-position: center;
-}
+}*/
 
 .header-sticky {
   height: 6rem;
@@ -136,7 +136,7 @@ header h1 {
 /* * * HERO * * */
 
 .hero {
-  height: 100vh;
+  height: calc(100vh - 3.5rem);
   color: white;
 }
 
@@ -166,9 +166,9 @@ header h1 {
   background-image: url('./images/hero-5-1280.jpg');
 }
 
-.hero .menu {
+/*.hero .menu {
   margin: 2rem;
-}
+}*/
 
 .chevron-down {
   background: url('./images/chevron-down-light.svg');
@@ -225,6 +225,26 @@ header h1 {
 
 /* * * NAVIGATION * * */
 
+.menu,
+.menu-close {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+  padding: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  background: white;
+}
+
+.menu-close {
+  position: relative;
+  z-index: 2;
+}
+
 .nav-shown {
   height: 100%;
   overflow: hidden;
@@ -254,6 +274,7 @@ header h1 {
   left: -.25rem;
   right: -.25rem;
   top: -0.25rem;
+  top: 1.5rem;
   bottom: -.25rem;
   position: absolute;
   z-index: 1;
@@ -287,12 +308,18 @@ header h1 {
   opacity: .75;
 }
 
-.full-nav .menu {
+/*.menu-close {
+  display: block;
+  height: 2rem;
+  width: 2rem;
+  background-image: url('./images/icon-close.svg');
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: center;
   position: relative;
   margin: 2rem 0 0 2rem;
-  background-image: url('./images/icon-close.svg');
   z-index: 2;
-}
+}*/
 
 nav {
   margin: 2rem;
