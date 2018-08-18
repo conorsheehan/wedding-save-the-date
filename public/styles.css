@@ -161,12 +161,6 @@ header h1 {
   background-image: url('./images/hero-home-1280.jpg');
 }
 
-@media (min-width:75rem) {
-  .home .hero-bg {
-    background-image: url('./images/hero-home-3360.jpg');
-  }
-}
-
 .people .hero-bg {
   background-image: url('./images/hero-1-1280.jpg');
 }
@@ -694,11 +688,19 @@ footer .hashtag {
   }
 
   nav .active {
-    text-decoration: underline;
+    /*text-decoration: underline;*/
+  }
+}
+
+
+
+@media (min-width:67.5rem) {
+  .hero {
+    height: 75%;
   }
 
-  .hero {
-    height: 100%;
+  .chevron-down {
+    display: none;
   }
 
   .hero h1 {
@@ -710,5 +712,28 @@ footer .hashtag {
     text-shadow: 0 0 8px rgba(0,0,0,0.25);
     bottom: unset;
   }
-}
 
+  .home .hero-bg {
+    background-image: url('./images/hero-home-3360-wide.jpg');
+  }
+
+  .people .hero-bg {
+    background-image: url('./images/hero-1-3360-wide.jpg');
+  }
+
+  .places .hero-bg {
+    background-image: url('./images/hero-6-3360-wide.jpg');
+  }
+
+  .things .hero-bg {
+    background-image: url('./images/hero-3-3360-wide.jpg');
+  }
+
+  .questions .hero-bg {
+    background-image: url('./images/hero-5-3360-wide.jpg');
+  }
+
+  .home-date {
+    background-image: url('./images/hero-4-3360-xwide.jpg');
+  }
+}
