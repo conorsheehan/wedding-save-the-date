@@ -83,6 +83,16 @@ h3 + p {
   margin-top: 0.5rem;
 }
 
+@media (min-width:67.5rem) {
+  p + h3 {
+    margin-top: 5rem;
+  }
+
+  h3 + p {
+    margin-top: 0.75rem;
+  }
+}
+
 .grey {
   color: #999;
 }
@@ -362,6 +372,12 @@ nav a {
   margin: 2rem auto;
   min-height: 66vh;
   font-weight: 300;
+}
+
+@media (min-width:67.5rem) {
+  .main {
+    margin: 4rem auto;
+  }
 }
 
 .main h1 {
