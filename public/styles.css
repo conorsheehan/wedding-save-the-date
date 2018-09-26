@@ -542,6 +542,7 @@ a.card:hover {
   line-height: 3.5rem;
   font-size: 1.25em;
   text-align: center;
+  transition: background-color 150ms;
 }
 
 .card-actions a:last-child {
@@ -550,6 +551,10 @@ a.card:hover {
 
 .card-actions .card-action-2x {
   flex-grow: 2;
+}
+
+.card-actions a:hover {
+  background: #B5124E;
 }
 
 .card-actions a img {
@@ -750,10 +755,17 @@ footer .hashtag {
     font-weight: 400;
     text-shadow: 0 0 5px rgba(0,0,0,0.5);
     display: inline-block;
+    border-bottom: 1px solid transparent;
+    transition: transform 150ms, border-color 150ms;
   }
 
   nav .active {
     /*text-decoration: underline;*/
+  }
+
+  nav a:hover {
+    transform: scale(1.125);
+    border-bottom: 1px solid white;
   }
 }
 
