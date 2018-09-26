@@ -93,6 +93,10 @@ h3 + p {
   }
 }
 
+.centered {
+  text-align: center;
+}
+
 a.text {
   color: #E8007B;
   text-decoration: none;
