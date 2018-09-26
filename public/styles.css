@@ -221,6 +221,26 @@ header h1 {
   width: 100%;
 }
 
+.hero-text {
+  position: absolute;
+  font-size: 3.5em;
+  line-height: 1.1;
+  top: 45%;
+  text-align: center;
+  width: 100%;
+  font-family: 'beloved-script', serif;
+  color: white;
+  text-shadow: 0 0 5px rgba(0,0,0,0.25);
+}
+
+
+@media (min-width:67.5rem) {
+  .hero-text {
+    font-size: 4em;
+    top: 60%;
+  }
+}
+
 /* * * HOME * * */
 
 .cta {
