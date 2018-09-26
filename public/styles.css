@@ -35,12 +35,6 @@ html {
   overflow-x: hidden;
 }
 
-/* FONT HACK */
-.wf-loading * {
-  color: transparent !important;
-  text-shadow: none !important;
-}
-
 h1 {
   font-family: 'beloved-script', serif;
   font-size: 1.875em;
@@ -62,13 +56,6 @@ h4 {
   margin: 0.5em 0;
 }
 
-h5 {
-  font-size: 1.125em;
-  font-weight: 700;
-  line-height: 1.333333em;
-  margin: 0.5em 0;
-}
-
 p {
   font-size: 1.125em;
   line-height: 1.77em;
@@ -83,18 +70,12 @@ h3 + p {
   margin-top: 0.5rem;
 }
 
-@media (min-width:67.5rem) {
-  p + h3 {
-    margin-top: 5rem;
-  }
-
-  h3 + p {
-    margin-top: 0.75rem;
-  }
-}
-
 .centered {
   text-align: center;
+}
+
+.grey {
+  color: #999;
 }
 
 a.text {
@@ -108,10 +89,6 @@ a.text:hover {
   color: white;
   background: #E8007B;
   text-decoration: none;
-}
-
-.grey {
-  color: #999;
 }
 
 .spacer-1 {
@@ -130,6 +107,30 @@ a.text:hover {
   height: 4rem;
 }
 
+/* FONT HACK */
+.wf-loading * {
+  color: transparent !important;
+  text-shadow: none !important;
+}
+
+@media (min-width:67.5rem) {
+  body {
+    font-size: 1.25em;
+  }
+
+  p + h3 {
+    margin-top: 5rem;
+  }
+
+  h3 + p {
+    margin-top: 0.75rem;
+  }
+
+  .lg-centered {
+    text-align: center;
+  }
+}
+
 /* * * HEADER * * */
 
 header h1 {
@@ -140,35 +141,6 @@ header h1 {
   font-weight: 500;
   line-height: 1.333333em;
   text-transform: uppercase;
-}
-
-/*.menu {
-  display: block;
-  float: left;
-  height: 2rem;
-  width: 2rem;
-  background: url('./images/hamburger@2x.png');
-  background-size: 75%;
-  background-repeat: no-repeat;
-  background-position: center;
-}*/
-
-.header-sticky {
-  height: 6rem;
-  padding: 2rem;
-  background: url('./images/header-background@2x.png') #FDF8F3;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.people-2 .header-sticky {
-  display: none;
-}
-
-.header-sticky h1 {
-  margin: 0 0 0 1rem;
-  float: left;
 }
 
 /* * * HERO * * */
@@ -204,37 +176,13 @@ header h1 {
   background-image: url('./images/hero-5-1280.jpg');
 }
 
-/*.hero .menu {
-  margin: 2rem;
-}*/
-
-.chevron-down {
-  background: url('./images/chevron-down-light.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 2rem;
-  height: 1rem;
-}
-
-.hero .chevron-down {
-  margin: auto;
-}
-
 .hero h1 {
   text-align: center;
   font-size: 2.5em;
   font-weight: 500;
   bottom: 0;
   position: absolute;
-  margin-bottom: 3rem;
-  width: 100%;
-}
-
-.hero .chevron-down {
-  bottom: 0;
-  position: absolute;
-  margin-bottom: 1.5rem;
+  margin-bottom: 4rem;
   width: 100%;
 }
 
@@ -250,13 +198,67 @@ header h1 {
   text-shadow: 0 0 5px rgba(0,0,0,0.25);
 }
 
+.chevron-down {
+  background: url('./images/chevron-down-light.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 2rem;
+  height: 1rem;
+}
+
+.hero .chevron-down {
+  bottom: 0;
+  position: absolute;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
 @media (min-width:67.5rem) {
+  .hero {
+    height: 75%;
+  }
+
+  .home .hero-bg {
+    background-image: url('./images/hero-home-3360-wide.jpg');
+  }
+
+  .people .hero-bg {
+    background-image: url('./images/hero-1-3360-wide.jpg');
+  }
+
+  .places .hero-bg {
+    background-image: url('./images/hero-6-3360-wide.jpg');
+  }
+
+  .things .hero-bg {
+    background-image: url('./images/hero-3-3360-wide.jpg');
+  }
+
+  .questions .hero-bg {
+    background-image: url('./images/hero-5-3360-wide.jpg');
+  }
+
+  .hero h1 {
+    top: 50%;
+    margin: 0;
+    line-height: 1.5em;
+    margin-top: -.75em;
+    font-size: 5em;
+    text-shadow: 0 0 8px rgba(0,0,0,0.33);
+    bottom: unset;
+  }
+
   .hero-text {
     font-size: 4em;
   }
+
+  .chevron-down {
+    display: none;
+  }
 }
 
-/* * * HOME * * */
+/* * * CTA * * */
 
 .cta {
   font-size: 1.125em;
@@ -299,14 +301,8 @@ header h1 {
   background: white;
 }
 
-/*.nav-shown {
-  height: 100%;
-  overflow: hidden;
-}*/
-
 .full-nav {
   position: fixed;
-  /*position: absolute;*/
   top: 0;
   width: 100%;
   height: 100%;
@@ -364,19 +360,6 @@ header h1 {
   opacity: .75;
 }
 
-/*.menu-close {
-  display: block;
-  height: 2rem;
-  width: 2rem;
-  background-image: url('./images/icon-close.svg');
-  background-size: 75%;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
-  margin: 2rem 0 0 2rem;
-  z-index: 2;
-}*/
-
 nav {
   margin: 2rem;
   position: absolute;
@@ -399,6 +382,65 @@ nav a {
   }
 }
 
+@media (min-width:67.5rem) {
+  .menu {
+    display: none;
+  }
+
+  .full-nav {
+    box-shadow: none;
+    position: absolute;
+    display: block;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    background: -webkit-linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0));
+    height: 8rem;
+    opacity: 1;
+    z-index: 2;
+    height: unset;
+    top: unset;
+    transition: unset;
+  }
+
+  .menu-close {
+    display: none;
+  }
+
+  .nav-bg {
+    display: none;
+  }
+
+  nav {
+    position: relative;
+    margin: 0;
+    z-index: unset;
+    bottom: unset;
+    text-align: center;
+  }
+
+  nav a {
+    font-size: 1.25em;
+    margin: 0.5em 1.5em;
+    color: white;
+    font-weight: 400;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+    transition: transform 150ms, border-color 150ms;
+  }
+
+  nav a:hover {
+    transform: scale(1.125);
+    border-bottom: 1px solid white;
+  }
+}
+
 /* * * MAIN * * */
 
 .main {
@@ -409,15 +451,23 @@ nav a {
   font-weight: 300;
 }
 
+.main h1 {
+  text-align: center;
+}
+
+@media (min-width:34rem) {
+  .main h1 {
+    font-size: 2.5rem;
+  }
+}
+
 @media (min-width:67.5rem) {
   .main {
     margin: 4rem auto;
   }
 }
 
-.main h1 {
-  text-align: center;
-}
+/* * * PEOPLE * * */
 
 .person {
   text-align: center;
@@ -444,16 +494,11 @@ nav a {
   color: #009CCC;
 }
 
-.person p {
-  /*font-size: 1.125em;
-  line-height: 1.5em;*/
+.person h3 + p {
+  margin-top: 0;
 }
 
-@media (min-width:544px) {
-  .main h1 {
-    font-size: 2.5rem;
-  }
-
+@media (min-width:34rem) {
   .people-list {
     display: flex;
     flex-wrap: wrap;
@@ -466,7 +511,6 @@ nav a {
     width: 12rem;
   }
 }
-
 
 @media (min-width:67.5rem) {
   .person {
@@ -597,33 +641,6 @@ a.card:hover {
   }
 }
 
-/* * * FOOTER * * */
-
-footer {
-  /*border-top: 2px solid #222;*/
-  background: url(./images/footer-full.jpg);
-  background-size: cover;
-  color: #555;
-  padding: 1.5rem 1rem;
-  text-align: center;
-  font-weight: 300;
-  background-position: center;
-  padding: 6rem 0;
-  background-color: rgba(0,0,00,0.5);
-  background-blend-mode: overlay;
-  color: white;
-  letter-spacing: 0.1em;
-}
-
-footer p {
-  /*font-size: 1em;*/
-  line-height: 1.75em;
-}
-
-footer .hashtag {
-  /*font-weight: 500;*/
-}
-
 /* * * QUESTIONS * * */
 
 .questions h3 {
@@ -635,7 +652,6 @@ footer .hashtag {
 .home-date {
   background-image: url('./images/hero-4-1280.jpg');
   background-color: rgba(0,0,0,0.5);
-  /*background-blend-mode: overlay;*/
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -670,6 +686,33 @@ footer .hashtag {
   border-color: #E8007B;
 }
 
+@media (min-width:67.5rem) {
+  .home-date {
+    background-image: url('./images/hero-4-3360-xwide.jpg');
+  }
+}
+
+/* * * FOOTER * * */
+
+footer {
+  background: url(./images/footer-full.jpg);
+  background-size: cover;
+  color: #555;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  font-weight: 300;
+  background-position: center;
+  padding: 6rem 0;
+  background-color: rgba(0,0,00,0.5);
+  background-blend-mode: overlay;
+  color: white;
+  letter-spacing: 0.1em;
+}
+
+footer p {
+  line-height: 1.75em;
+}
+
 /* * * RESPONSIVE XL * * */
 
 .max-width-lg {
@@ -690,127 +733,9 @@ footer .hashtag {
   margin-right: auto;
 }
 
-
 @media (min-width:62rem) {
   .full-width {
     margin-left: calc(-50vw + 30rem);
     margin-right: calc(-50vw + 30rem);
-  }
-}
-
-@media (min-width:67.5rem) {
-  body {
-    font-size: 1.25em;
-  }
-
-  .lg-centered {
-    text-align: center;
-  }
-
-  .menu {
-    display: none;
-  }
-
-  .full-nav {
-    box-shadow: none;
-    position: absolute;
-    display: block;
-    text-decoration: none;
-    color: #333;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5rem;
-    background: -webkit-linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0));
-    height: 8rem;
-    opacity: 1;
-    z-index: 2;
-    height: unset;
-    top: unset;
-    transition: unset;
-  }
-
-  .menu-close {
-    display: none;
-  }
-
-  .nav-bg {
-    display: none;
-  }
-
-  nav {
-    position: relative;
-    margin: 0;
-    z-index: unset;
-    bottom: unset;
-    text-align: center;
-  }
-
-  nav a {
-    font-size: 1.25em;
-    margin: 0.5em 1.5em;
-    color: white;
-    font-weight: 400;
-    text-shadow: 0 0 5px rgba(0,0,0,0.5);
-    display: inline-block;
-    border-bottom: 1px solid transparent;
-    transition: transform 150ms, border-color 150ms;
-  }
-
-  nav .active {
-    /*text-decoration: underline;*/
-  }
-
-  nav a:hover {
-    transform: scale(1.125);
-    border-bottom: 1px solid white;
-  }
-}
-
-
-
-@media (min-width:67.5rem) {
-  .hero {
-    height: 75%;
-  }
-
-  .chevron-down {
-    display: none;
-  }
-
-  .hero h1 {
-    top: 50%;
-    margin: 0;
-    line-height: 1.5em;
-    margin-top: -.75em;
-    font-size: 5em;
-    text-shadow: 0 0 8px rgba(0,0,0,0.33);
-    bottom: unset;
-  }
-
-  .home .hero-bg {
-    background-image: url('./images/hero-home-3360-wide.jpg');
-  }
-
-  .people .hero-bg {
-    background-image: url('./images/hero-1-3360-wide.jpg');
-  }
-
-  .places .hero-bg {
-    background-image: url('./images/hero-6-3360-wide.jpg');
-  }
-
-  .things .hero-bg {
-    background-image: url('./images/hero-3-3360-wide.jpg');
-  }
-
-  .questions .hero-bg {
-    background-image: url('./images/hero-5-3360-wide.jpg');
-  }
-
-  .home-date {
-    background-image: url('./images/hero-4-3360-xwide.jpg');
   }
 }
