@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-phone</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-phone" fill="#E8007B" fill-rule="nonzero">
+            <path d="M10.152555,13.8422325 C12.527055,16.2167325 15.276555,18.4877325 16.362555,17.4002325 C17.919555,15.8447325 18.878055,14.4887325 22.308555,17.2457325 C25.737555,20.0057325 23.103555,21.8432325 21.596055,23.3507325 C19.857555,25.0907325 13.373055,23.4422325 6.965055,17.0327325 C0.557055,10.6202325 -1.091445,4.1342325 0.648555,2.3942325 C2.156055,0.8867325 3.993555,-1.7487675 6.750555,1.6832325 C9.507555,5.1137325 8.153055,6.0737325 6.596055,7.6307325 C5.510055,8.7167325 7.779555,11.4677325 10.152555,13.8422325" id="Shape"></path>
+        </g>
+    </g>
+</svg>
