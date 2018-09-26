@@ -93,6 +93,19 @@ h3 + p {
   }
 }
 
+a.text {
+  color: #E8007B;
+  text-decoration: none;
+  border-bottom: 2px solid #E8007B;
+  transition: background 250ms, color 250ms;
+}
+
+a.text:hover {
+  color: white;
+  background: #E8007B;
+  text-decoration: none;
+}
+
 .grey {
   color: #999;
 }
