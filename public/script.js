@@ -8,7 +8,8 @@ var app = (function() {
       this.$menu = $('.menu');
       this.$nav = $('.full-nav');
       this.$body = $('body');
-      this.addHandlers();
+      this.parallax()
+          .addHandlers();
       return this;
     },
 
@@ -44,6 +45,17 @@ var app = (function() {
         self.$nav.hide();
       }, 500);
       return this;
+    },
+
+    parallax: function() {
+      jarallax(document.querySelectorAll('.jarallax'), {
+        disableParallax: function () {
+            return /iPad|iPhone|iPod|Android/.test(navigator.userAgent);
+        },
+        disableVideo: function () {
+            return /iPad|iPhone|iPod|Android/.test(navigator.userAgent);
+        }
+      });
     }
   };
 })();
