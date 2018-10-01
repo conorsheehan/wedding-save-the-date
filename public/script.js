@@ -1,7 +1,5 @@
 var app = (function() {
-  var hiddenClass = 'hidden';
   var visibleClass = 'visible';
-  var navVisibleClass = 'nav-shown';
 
   return {
     initialize: function() {
@@ -29,7 +27,6 @@ var app = (function() {
     showNav: function() {
       var self = this;
       this.$nav.show();
-      // this.$body.addClass(navVisibleClass);
       $(window).scrollTop(0);
       setTimeout(function() {
         self.$nav.addClass(visibleClass);
@@ -40,7 +37,6 @@ var app = (function() {
     hideNav: function() {
       var self = this;
       this.$nav.removeClass(visibleClass);
-      // this.$body.removeClass(navVisibleClass);
       setTimeout(function() {
         self.$nav.hide();
       }, 500);
@@ -48,19 +44,13 @@ var app = (function() {
     },
 
     parallax: function() {
-      jarallax(document.querySelectorAll('.jarallax'), {
+      jarallax(document.querySelectorAll('.jarallax-hero'), {
         speed: 0.4,
         disableParallax: /iPad|iPhone|iPod|Android/
-        // disableVideo: /iPad|iPhone|iPod|Android/
       });
-      // jarallax(document.querySelectorAll('.jarallax'), {
-      //   disableParallax: function () {
-      //       return /iPad|iPhone|iPod|Android/.test(navigator.userAgent);
-      //   },
-      //   disableVideo: function () {
-      //       return /iPad|iPhone|iPod|Android/.test(navigator.userAgent);
-      //   }
-      // });
+      jarallax(document.querySelectorAll('.jarallax-body'), {
+        speed: 0.8
+      });
 
       return this;
     }
