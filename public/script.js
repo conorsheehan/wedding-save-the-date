@@ -49,13 +49,18 @@ var app = (function() {
 
     parallax: function() {
       jarallax(document.querySelectorAll('.jarallax'), {
-        disableParallax: function () {
-            return /iPad|iPhone|iPod|Android/.test(navigator.userAgent);
-        },
-        disableVideo: function () {
-            return /iPad|iPhone|iPod|Android/.test(navigator.userAgent);
-        }
+        speed: 0.4,
+        disableParallax: /iPad|iPhone|iPod|Android/
+        // disableVideo: /iPad|iPhone|iPod|Android/
       });
+      // jarallax(document.querySelectorAll('.jarallax'), {
+      //   disableParallax: function () {
+      //       return /iPad|iPhone|iPod|Android/.test(navigator.userAgent);
+      //   },
+      //   disableVideo: function () {
+      //       return /iPad|iPhone|iPod|Android/.test(navigator.userAgent);
+      //   }
+      // });
 
       return this;
     }
