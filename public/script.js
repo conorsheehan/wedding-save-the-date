@@ -56,6 +56,8 @@ var app = (function() {
             return /iPad|iPhone|iPod|Android/.test(navigator.userAgent);
         }
       });
+
+      return this;
     }
   };
 })();
