@@ -737,6 +737,12 @@ footer p {
   line-height: 1.75em;
 }
 
+@media (min-width:67.5rem) {
+  footer {
+    font-size: 1em;
+  }
+}
+
 /* * * 404 * * */
 
 body.not-found {
