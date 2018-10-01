@@ -762,7 +762,7 @@ body.not-found {
 
 @media (min-width:40rem) {
   .error-body {
-    top: 50%;
+    top: 45%;
     font-size: 1.5em;
   }
 }
