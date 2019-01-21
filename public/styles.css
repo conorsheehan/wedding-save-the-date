@@ -699,6 +699,18 @@ a.card:hover {
   }
 }
 
+/* * * THINGS * * */
+
+.registry-link {
+  display: block;
+  margin: auto;
+  max-width: 10rem;
+}
+
+.registry-link img {
+  max-width: 100%;
+}
+
 /* * * FOOTER * * */
 
 footer {
